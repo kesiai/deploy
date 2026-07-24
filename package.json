@@ -1,0 +1,6 @@
+{
+  "name": "kesi-deploy",
+  "version": "1.0.0",
+  "description": "KESI 项目部署工具 - 将现有前端项目部署到 KESI 平台",
+  "license": "MIT"
+}
