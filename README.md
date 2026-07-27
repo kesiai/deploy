@@ -14,7 +14,7 @@ KESI 项目发布工具 — 将现有前端项目部署到 KESI 平台。
 ### AI Skill 模式（推荐）
 
 ```
-用户: /kesi-project-publish 帮我部署这个项目
+用户: /kesi-deploy 帮我部署这个项目
 
 AI 自动执行：
 1. 分析项目
@@ -60,7 +60,7 @@ kesi-upload --server-url <url> \
 ## 文件结构
 
 ```
-kesi-project-publish/
+kesi-deploy/
 ├── skill/
 │   ├── SKILL.md              # AI 主文档
 │   └── references/           # 参考文档
