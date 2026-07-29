@@ -163,19 +163,19 @@ AI 读取上传配置，执行 CLI：
 
 ```bash
 node .claude/skills/kesi-deploy/cli/index.cjs \
-     --server-url <url> \
+     --base-url <url> \
      --token <token> \
      --project-id <id> \
      --file {route}.zip
 ```
 
-**配置获取方式（优先级）：**
+**配置获取方式（优先级：参数 > 环境变量）：**
 
-| 优先级 | 方式 | 说明 |
-|--------|------|------|
-| 1 | **命令参数** | `--server-url` / `--project-id` / `--token` |
-| 2 | **环境变量** | `KESI_SERVER_URL` / `KESI_PROJECT_ID` / `KESI_TOKEN` |
-| 3 | **用户输入** | AI 询问用户提供 |
+| 字段 | CLI 参数 | 环境变量 |
+|------|----------|----------|
+| baseUrl | `--base-url` | `KESI_BASE_URL` |
+| projectId | `--project-id` | `KESI_PROJECT` |
+| token | `--token` | `KESI_TOKEN` |
 
 **Token 获取：**
 - 登录 KESI 平台后，从浏览器开发者工具 → Application → Local Storage 复制 `token`
