@@ -128,7 +128,7 @@ kesi-deploy --server-url <serverUrl> \
 ### API 端点
 
 ```
-POST /rest/projects/upload
+POST /rest/apps/upload
 ```
 
 ### 请求头

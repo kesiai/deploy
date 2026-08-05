@@ -165,8 +165,8 @@ function uploadFile(serverUrl, token, projectId, filePath) {
     // 创建 FormData
     const formData = createFormData(filePath);
 
-    // 构建请求路径: /rest/projects/upload
-    const uploadPath = path.join(url.pathname || '/', 'rest', 'projects', 'upload').replace(/\\/g, '/');
+    // 构建请求路径: /rest/apps/upload
+    const uploadPath = path.join(url.pathname || '/', 'rest', 'apps', 'upload').replace(/\\/g, '/');
 
     // 发送请求
     const options = {
